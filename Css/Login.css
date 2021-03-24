@@ -1,0 +1,149 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&display=swap');
+
+
+* {
+    font-family:'Titillium Web', sans-serif;
+}
+
+.animate{
+   animation: up-down 2s ease-in-out infinite alternate-reverse both;    
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(10px)
+    }
+    100%{
+        transform: translateY(-10px)
+    }
+}
+
+.leftDiv{
+    margin-top:20vh;
+    float: left;
+    width: 40%;
+    align-content:center;
+    align-items:center;    
+}
+
+.rightDiv{
+    margin-top:25vh;
+    float: left;
+    width: 60%;
+    justify-content:center;
+    display:flex;
+}
+
+.rightDiv img{
+    height:45vh;
+    width:75vw;
+    margin-right:20px;
+}
+
+.Box{
+    margin-left:40%;
+    margin-top: 30%;
+    position: relative;
+    transform:translate(-50%,-50%);
+    width: 350px;
+    box-shadow: 0px 0px 2px 2px #564FCC;
+    min-height:200px;
+    background: white;
+    border-radius:10px;
+    padding:40px;
+    box-sizing:border-box;
+}
+
+.Box img{
+    height:80px;
+    width:80px;
+    display:block;
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+
+.Box h3{
+    margin:0;
+    padding: 0 0 20px;
+    color: #262626;
+    text-align:center;
+}
+
+.Box input{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.Box input[type="text"],
+.Box input[type="email"],
+.Box input[type="password"]{
+    border:none;
+    border-bottom: 2px solid #564FCC;
+    outline:none;
+    height:40px;
+    background:transparent;
+    font-size:16px;
+    padding-left:20px;
+    box-sizing:border-box;
+}
+
+.Box input[type="email"]:focus,
+.Box input[type="email"]:focus,
+.Box input[type="password"]:focus{
+    border-bottom: 2px solid #564FCC;
+}
+
+.inputBox{
+    position:relative;
+}
+
+.inputBox span{
+    position:absolute;
+    top:10px;
+    color:#262626;
+}
+
+.Box .btn
+{
+    border:none;
+    outline:none;
+    height:40px;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    background: #564FCC;
+    color:white;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.Box input[type="submit"]:hover
+{
+    transform:scale(1.05);
+}
+
+.Box p{
+    color:#262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-align:center;
+    display:block;
+}
+
+.Box a{
+    color:#262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+}
+
+.Box a:hover{
+    color: #564FCC;
+}
+
+@media screen and (max_width: 900px){
+    .rightDiv {
+        display:none;
+    }
+}

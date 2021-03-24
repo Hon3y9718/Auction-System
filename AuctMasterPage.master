@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AuctMasterPage.master.cs" Inherits="AuctMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Online Auction System</title>
+    <link href="Css/Master.css" rel="stylesheet" />
+    <link rel="icon" href="Images/Logo.png" type="image/icon type"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="Header">
+            <h2 class="Logo"><span>Auction</span>System</h2>     
+            <div class="burger" onclick="slide()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+          <nav class="navbar" id="navbar">
+            <a href="Home.aspx" class="nav-links">Home</a>
+            <a href="Contacts.aspx" class="nav-links">Contact</a>
+            <a href="Login.aspx" class="nav-links">Login</a>
+            <a href="AdminMain.aspx" class="nav-links">Admin</a>
+            <a href="Register.aspx" class="nav-links">Get Started</a>
+        </nav>
+        </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="Footer">
+        <div class="inner-footer">
+            <div class="logo-container">
+                <h2 class="Logo"><span>Auction</span>System</h2>
+            </div>
+            <div class="hero-container">
+            <h2 class="Detail"><span>Name:</span>Umesh</h2>
+            <h2 class="Detail"><span>Enrollment Number:</span>186521426</h2>
+            <h2 class="Detail"><span>Guided By:</span>Chandraj Maurya</h2>
+
+            </div>
+        </div>
+    </div>
+    </form>
+    <script src="Script.js"></script>
+</body>
+</html>

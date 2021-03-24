@@ -1,0 +1,244 @@
+﻿
+.animate{
+   animation: up-down 2s ease-in-out infinite alternate-reverse both;    
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(10px)
+    }
+    100%{
+        transform: translateY(-10px)
+    }
+}
+
+.leftDiv{
+    margin-top:19vh;
+    float: left;
+    padding-left:5%;
+    width: 38%;
+    align-content:center;
+    align-items:center; 
+    justify-content:center;   
+}
+
+.leftDiv h1{
+    margin-left:6vw;
+}
+
+.leftDiv p{
+    text-align:center;
+    justify-content:center;
+    padding:7% 2% 7% 2%;
+    font-size:20px;
+    color:#7a7a78;
+}
+
+.leftDiv p .Span1{
+    color: #564FCC;
+    font-size:22px;
+    font-style:italic;
+}
+
+.leftDiv p .Span2{
+    color:black;
+    font-weight:500;
+    font-style:italic;
+    font-size: 22px;
+}
+
+.leftDiv a{
+    text-decoration:none;
+
+}
+
+.StartedButton{
+    margin-left:10.5vw;
+    color:white;
+    text-decoration:none;
+    background:#6C63FF;
+    padding:10px 20px;
+    border-radius: 35px;
+}
+
+.rightDiv{
+    margin-top:10vh;
+    float: left;
+    width: 60%;
+    justify-content:center;
+    display:flex;
+}
+
+.rightDiv img{
+    height:65vh;
+    width:90vw;
+}
+
+.HowLeft{
+    margin-top:19vh;
+    margin-left:10%;
+    float: left;
+    width: 50%;
+    align-content:center;
+    align-items:center;  
+    display:flex;
+    flex-direction:column;
+}
+
+.HowRight{
+    margin-top:16vh;
+    float: left;
+    width: 30%;
+    justify-content:center;
+    display:flex;
+}
+
+.HowRight img{
+    height:55vh;
+    width:35vw;  
+}
+
+.HowLeft p{
+    text-align:center;
+    justify-content:center;
+    padding:5% 3% 7% 2%;
+    font-size:20px;
+    color:#7a7a78;
+}
+
+.StartedButton1{
+    margin-left:16vw;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    background:#6C63FF;
+    padding:10px 20px;
+    border-radius: 35px;
+}
+
+.LoginButton{
+    margin-left:16.5vw;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    background:#6C63FF;
+    padding:10px 20px;
+    border-radius: 35px;
+}
+
+.HappyDivLeft{
+    margin-top:10vh;
+    margin-bottom:10vh;
+    float: left;
+    width: 40%;
+    align-content:center;
+    align-items:center; 
+    justify-content:center; 
+}
+
+.HappyDivLeft h1{
+    margin-left:14vw;
+}
+
+.HappyDivLeft a{
+    text-decoration:none;
+}
+
+.HappyDivLeft p{
+    margin-left:10%;
+    text-align:center;
+    justify-content:center;
+    padding:2% 2% 0.5% 2%;
+    font-size:20px;
+    color:#7a7a78;
+}
+
+.HappyDivLeft .Log{
+    margin-top:10px;
+}
+
+.HappyDivRight{
+    margin-top:10vh;
+    margin-bottom:10vh;
+    float: left;
+    width: 60%;
+    justify-content:center;
+    display:flex;
+}
+
+.HappyDivRight img{
+    height:55vh;
+    width:70vw;
+}
+
+.row{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    margin-bottom:10vh;
+}
+
+@media screen and (max-width: 780px) {
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .StartedButton, .StartedButton1, .LoginButton{
+        margin-left:0;
+    }
+
+    .leftDiv {
+        width: 100%;
+        text-align: center;
+        justify-content:center;
+        order: 1;
+    }
+
+    .leftDiv h1, p{
+        margin:0;
+    }
+
+     .HappyDivLeft {
+        width: 100%;
+        text-align: center;
+        justify-content:center;
+        order: 1;
+    }
+
+     .HappyDivLeft h1, .HappyDivLeft p{
+         margin-left:0;
+     }
+
+      .HowLeft {
+        width: 100%;
+        text-align: center;
+        justify-content:center;
+        order: 1;
+    }
+
+    .HowLeft h1, .HowLeft p{
+        margin-right:15vw;
+        margin-left:0vw;
+        text-align:center;
+        justify-content:center;
+    }
+
+    .rightDiv{
+       display:none;
+    }
+    
+    .HowRight{
+        display:none;
+    }
+
+    .HappyDivRight{
+        display:none;
+    }
+}
+

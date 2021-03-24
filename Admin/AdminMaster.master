@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Online Auction System</title>
+    <link href="../Css/Master.css" rel="stylesheet" />
+    <link rel="icon" href="../Images/Logo.png" type="image/icon type"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="Header">
+            <h2 class="Logo"><span>Auction</span>System</h2>     
+          <nav class="navbar" id="navbar">
+            <a href="AllAuctions.aspx" class="nav-links">Auctions</a>
+            <a href="AllBids.aspx" class="nav-links">Bids</a>
+            <a href="ClosingHistory.aspx" class="nav-links">Closing History</a>
+            <a href="../AdminMain.aspx" class="nav-links">Log Out</a>
+        </nav>
+        </div>
+    <div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+         <div class="Footer">
+        <div class="inner-footer">
+            <div class="logo-container">
+                <h2 class="Logo"><span>Auction</span>System</h2>
+            </div>
+            <div class="hero-container">
+            <h2 class="Detail"><span>Name:</span>Umesh</h2>
+            <h2 class="Detail"><span>Enrollment Number:</span>186521426</h2>
+            <h2 class="Detail"><span>Guided By:</span>Chandraj Maurya</h2>
+
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
+
